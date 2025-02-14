@@ -1,7 +1,7 @@
 class Solution {
 public:
     int characterReplacement(string s, int k) {
-        int hash[26] ={0};
+        vector<int> hash(26);
         int l=0, r=0, n = s.length();
         int maxl = 0 , maxf = 0;
         while(r<n){
