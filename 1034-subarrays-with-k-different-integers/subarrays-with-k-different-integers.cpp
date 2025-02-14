@@ -7,7 +7,7 @@ public:
     int fun(vector<int>& nums, int k){
         int l=0, r=0, n=nums.size();
         int count=0;
-        map<int, int> mpp;
+        unordered_map<int, int> mpp;
         while(r<n){
             mpp[nums[r]]++;
             while(mpp.size()>k){
