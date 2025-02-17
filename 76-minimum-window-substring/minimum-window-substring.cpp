@@ -4,7 +4,7 @@ public:
         if (s.empty() || t.empty()) return "";
 
         int l=0, r=0, minl = INT_MAX;
-        int hash[256] = {0};
+        map <char, int> hash; 
         int count = 0, index = -1;
         for(int i=0; i<t.length(); i++){
             hash[t[i]]++;
